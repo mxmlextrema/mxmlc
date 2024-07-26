@@ -6,9 +6,9 @@ This repository contains a (currently in development) MXML compiler for the Flas
 
 Use MXMLShare to initialize, compile, test, evaluate, document and publish your apps and libraries.
 
-## Sky
+## Flex
 
-Sky is a graphical user interface framework included within MXMLC that is similiar to Flex.
+MXMLC embeds a variant of the Flex framework containing base component libraries such as Spark.
 
 ## License
 
