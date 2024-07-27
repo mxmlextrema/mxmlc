@@ -22,7 +22,8 @@ The MXML compiler handles three source formats simultaneously: ActionScript 3, M
 5. For each package in *allPackages*
     1. Visit statements
 6. While *remCSS* is non empty
-    1. (place steps here)
+    1. Visit directives for each *remCSS* element or defer
+    2. Remove each element from *remCSS* that has been finished.
 7. While *remAS* is non empty
     1. Resolve directives and then statements for each *remAS*
     2. Remove each element from *remAS* that has been finished.
