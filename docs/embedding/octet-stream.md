@@ -1,3 +1,0 @@
-# Embedding octet streams
-
-## Encryption
