@@ -9,7 +9,7 @@ The MXML compiler handles three source formats simultaneously: ActionScript 3, M
 3. For each MXML source, declare the respective ActionScript 3 package.
 4. Let *remPackages* be a mutable clone of the *allPackages* sequence.
 
-## Second pass
+## Resolution passes
 
 1. Let *remAS* be a mutable sequence containing all ActionScript 3 sources.
 2. Let *remMXML* be a mutable sequence containing all MXML sources.
@@ -24,4 +24,9 @@ The MXML compiler handles three source formats simultaneously: ActionScript 3, M
 6. While *remCSS* is non empty
     1. (place steps here)
 7. While *remAS* is non empty
-    1. (place steps here)
+    1. Resolve directives and then statements for each *remAS*
+    2. Remove each element from *remAS* that has been finished.
+8. Visit each deferred function expression or defer for a number of `MAX_CYCLES`.
+9. Add verify error for each function expression that could not be resolved.
+10. Finish each definition conflict, reporting any errors.
+11. Reset verifier state.
