@@ -19,7 +19,9 @@ The MXML compiler handles three source formats simultaneously: ActionScript 3, M
         1. Remove each element from *remPackages* that is of the `VerifierPhase::Finished` phase.
     2. Visit element in *remMXML* or defer otherwise.
         1. Remove each element from *remMXML* that is of the `VerifierPhase::Finished` phase.
-5. While *remCSS* is non empty
+5. For each package in *allPackages*
+    1. Visit statements
+6. While *remCSS* is non empty
     1. (place steps here)
-6. While *remAS* is non empty
+7. While *remAS* is non empty
     1. (place steps here)
