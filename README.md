@@ -6,9 +6,9 @@ This repository contains a (currently in development) MXML compiler for the Flas
 
 Use MXMLShare to initialize, compile, test, evaluate, document and publish your apps and libraries.
 
-## Flex
+## MX
 
-MXMLC embeds a variant of the Flex framework containing base component libraries such as Spark.
+MX is a framework that extends the Adobe AIR runtime and contains graphical user interface capabilities, a MXML component set and several other programming interfaces (`mx.**.*`).
 
 ## Codebase
 
