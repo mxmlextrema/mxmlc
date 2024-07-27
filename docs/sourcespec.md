@@ -25,7 +25,7 @@ package {
 }
 ```
 
-src/bathLog.as
+src/bathLog.inc.as
 
 ```as3
 trace("taking a bath");
